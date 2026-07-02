@@ -6,33 +6,290 @@
     <title>Profile page</title>
   </head>
   <body>
-    <h1>Shanto Kumar Das</h1>
-    <hr />
-    <p>
-      Hello i'm shanto kumar das. I am a full stack webdeveloper. I have lots of
-      full stack project. I publicly shared my project on the github linkedin
-      and other social platform. I completed many project as a full stack
-      developer
-    </p>
-    <img src="./French Fries And Sausage.jpg" width="150" height="150" alt="profile">
-    <br>
-    <br>
-    <h3>My Hobbies </h3>
-    <ul>
-        <li>coding</li>
-        <li>reading</li>
-        <li>playing</li>
-    </ul>
-    <br>
-    <br>
-    <h3>Daily Routine</h3>
-    <ul>
-        <li>Wake up</li>
-        <li>Study</li>
-        <li>Practice</li>
-        <li>Sleep</li>
-    </ul>
+    <nav>
+      <table width="90%" align="center" cellpadding="10">
+        <tr>
+          <td align="left">
+            <a href="#home"><strong>Home</strong></a>
+          </td>
+          <td align="center">
+            <a href="#about"><strong>About me</strong></a>
+          </td>
+          <td align="center">
+            <a href="#skills"><strong>Skills</strong></a>
+          </td>
+          <td align="center">
+            <a href="#projects"><strong>Project</strong></a>
+          </td>
+          <td align="right">
+            <a href="#contact"><strong>Contact</strong></a>
+          </td>
+        </tr>
+      </table>
+    </nav>
+    <hr width="90%" />
+    <br />
+    <br />
+    <br />
+    <main>
+      <section id="home">
+        <table width="90%" align="center" cellpadding="10">
+          <tr>
+            <td id="about" width="50%">
+              <h2>Hi, I'm <strong>SHANTO</strong></h2>
+              <p>
+                I am a Full Stack Web Developer. I love building beautiful and
+                fast websites. I work with technologies like React, Node.js, and
+                MongoDB. I have completed many full-stack projects. You can
+                check out my work and coding journey on my
+                <a href="https://github.com/CodeCommandBD"><strong>GitHub</strong></a> and
+                <a href="https://www.linkedin.com/in/shanto-kumar-das/"><strong>LinkedIn</strong></a
+                >.
+              </p>
+              <br />
+              <button>
+                <a href="#contact"><strong>Contact me >>></strong></a>
+              </button>
+            </td>
+            <td width="50%" align="center">
+              <img src="./media/profile.jpg" width="40%" alt="" />
+            </td>
+          </tr>
+        </table>
+      </section>
+      <br />
+      <br />
+      <br />
+      <br />
+      <section id="skills">
+        <table width="90%" align="center" cellpadding="20">
+          <tr>
+            <td colspan="3" align="center">
+              <h2><strong>MY SKILLS</strong></h2>
+              <hr width="20%" />
+              <br />
+              <br />
+            </td>
+          </tr>
+          <tr>
+            <td width="33%" align="center">
+              <label for="htmlSkill"
+                ><strong>HTML &ensp; &ensp; 80%</strong></label
+              >
+              <br />
+              <input
+                type="range"
+                id="htmlSkill"
+                name="htmlSkillLevel"
+                min="1"
+                max="10"
+                value="8"
+              />
+            </td>
+            <td width="33%" align="center">
+              <label for="cssSkill"
+                ><strong>CSS &ensp; &ensp; 75%</strong></label
+              >
+              <br />
+              <input
+                type="range"
+                id="cssSkill"
+                name="cssSkillLevel"
+                min="1"
+                max="10"
+                value="7"
+              />
+            </td>
+            <td width="33%" align="center">
+              <label for="jsSkill"
+                ><strong>JavaScript &ensp; &ensp; 60%</strong></label
+              >
+              <br />
+              <input
+                type="range"
+                id="jsSkill"
+                name="jsSkillLevel"
+                min="1"
+                max="10"
+                value="6"
+              />
+            </td>
+          </tr>
+        </table>
+      </section>
+      <br />
+      <br />
+      <br />
+      <section id="projects">
+        <table width="90%" align="center" cellpadding="20">
+          <tr>
+            <td colspan="3" align="center">
+              <h2><strong>MY PROJECTS</strong></h2>
+              <hr width="20%" />
+              <br />
+              <br />
+              <br />
+            </td>
+          </tr>
+          <tr>
+            <td align="center" width="33%">
+              <img src="./media/project1.png" width="500" height="300" />
+              <br />
+              <h3>Smart Rental Management</h3>
+              <button>
+                <a href="https://bari-bhara-client.vercel.app/" target="_blank"
+                  ><strong>View Project </strong></a
+                >
+              </button>
+            </td>
+            <td align="center" width="33%">
+              <img src="./media/project2.png" width="500" height="300" />
+              <br />
+              <h3>WearPoint - Premium E-Commerce Platform</h3>
+              <button>
+                <a href="https://wearpoint-nu.vercel.app/" target="_blank"
+                  ><strong>View Project </strong></a
+                >
+              </button>
+            </td>
+          </tr>
+        </table>
+      </section>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <section id="contact">
+        <table width="90%" align="center" cellpadding="15">
+          <tr>
+            <td colspan="2" align="center">
+              <h2><strong>CONTACT ME</strong></h2>
+              <hr width="20%" />
+              <br />
+            </td>
+          </tr>
+          <tr>
+            <td width="40%" valign="top">
+              <h3>Get In Touch</h3>
+              <p>
+                Have a project idea or want to work together? Send me a message
+                using this form.
+              </p>
+              <p><strong>Email:</strong> shanto@example.com</p>
+              <p><strong>Phone:</strong> +880 1XXXXXXXXX</p>
+              <p><strong>Location:</strong> Bangladesh</p>
+            </td>
+            <td width="60%" valign="top">
+              <form action="" method="post">
+                <table width="100%" cellpadding="8">
+                  <tr>
+                    <td><label for="name"><strong>Name:</strong></label></td>
+                    <td>
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="email"><strong>Email:</strong></label></td>
+                    <td>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="phone"><strong>Phone:</strong></label></td>
+                    <td>
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter your phone number"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="subject"><strong>Subject:</strong></label>
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        placeholder="Enter message subject"
+                        required
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top">
+                      <label for="message"><strong>Message:</strong></label>
+                    </td>
+                    <td>
+                      <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        cols="40"
+                        placeholder="Write your message"
+                        required
+                      ></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>
+                      <button type="submit"><strong>Send Message</strong></button>
+                      <button type="reset">Clear</button>
+                    </td>
+                  </tr>
+                </table>
+              </form>
+            </td>
+          </tr>
+        </table>
+      </section>
+    </main>
+    <br />
+    <br />
+    <hr width="90%" />
 
-    <a href="https://www.duolingo.com/">doulingo</a>
+    <footer>
+      <table width="90%" align="center" cellpadding="10">
+        <tr>
+          <td align="left">
+            <strong>SHANTO</strong>
+            <br />
+            Full Stack Web Developer
+          </td>
+          <td align="center">
+            <a href="#home">Home</a> |
+            <a href="#skills">Skills</a> |
+            <a href="#projects">Projects</a> |
+            <a href="#contact">Contact</a>
+          </td>
+          <td align="right">
+            <a href="https://github.com/CodeCommandBD">GitHub</a> |
+            <a href="https://www.linkedin.com/in/shanto-kumar-das/">LinkedIn</a>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3" align="center">
+            <em>(c) 2026 SHANTO. All rights reserved.</em>
+          </td>
+        </tr>
+      </table>
+    </footer>
   </body>
 </html>

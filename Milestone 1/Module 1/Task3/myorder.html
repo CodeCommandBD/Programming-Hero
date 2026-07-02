@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taste Haven My Order</title>
+  </head>
+
+  <body>
+    <nav>
+      <table width="100%">
+        <tr>
+          <td align="left">
+            <a href="./index.html"><strong>Taste Haven</strong></a>
+          </td>
+          <td><a href="./index.html">Home</a></td>
+          <td><a href="./menu.html">Menu</a></td>
+          <td><a href="./myorder.html">My Order</a></td>
+        </tr>
+      </table>
+    </nav>
+    <hr />
+    <br />
+
+    <main>
+      <h2 align="center">Confirm Your Food Order</h2>
+
+      <form action="./myorder.html" method="get">
+        <table align="center" cellpadding="10">
+          <tr>
+            <td><label for="food">Food Item:</label></td>
+            <td>
+              <select id="food" name="food" required>
+                <option value="">Select Food Item</option>
+                <option value="Chicken Cheese Burger">Chicken Cheese Burger</option>
+                <option value="BBQ Chicken Pizza Delight">BBQ Chicken Pizza Delight</option>
+                <option value="Fresh Spring Rolls">Fresh Spring Rolls</option>
+                <option value="Crispy Fried Chicken">Crispy Fried Chicken</option>
+                <option value="Korean Fried Chicken Wings">Korean Fried Chicken Wings</option>
+                <option value="Tasty Fry Nuggets">Tasty Fry Nuggets</option>
+                <option value="French Fries And Sausage">French Fries And Sausage</option>
+                <option value="Shrimp Stir Fry with Noodles">Shrimp Stir Fry with Noodles</option>
+                <option value="Grilled Chicken Skewers">Grilled Chicken Skewers</option>
+                <option value="Lemon Grilled Fish">Lemon Grilled Fish</option>
+                <option value="Chocolate Cake">Chocolate Cake</option>
+                <option value="Chocolate Ice Cream Cone">Chocolate Ice Cream Cone</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="quantity">Quantity:</label></td>
+            <td>
+              <input
+                type="number"
+                id="quantity"
+                name="quantity"
+                min="1"
+                value="1"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="name">Full Name:</label></td>
+            <td>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="phone">Phone Number:</label></td>
+            <td>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="01XXXXXXXXX"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@email.com"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="address">Delivery Address:</label></td>
+            <td>
+              <textarea
+                id="address"
+                name="address"
+                rows="4"
+                cols="35"
+                placeholder="Enter your delivery address"
+                required
+              ></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="date">Delivery Date:</label></td>
+            <td><input type="date" id="date" name="date" required /></td>
+          </tr>
+
+          <tr>
+            <td><label for="time">Delivery Time:</label></td>
+            <td><input type="time" id="time" name="time" required /></td>
+          </tr>
+
+          <tr>
+            <td>Payment Method:</td>
+            <td>
+              <input
+                type="radio"
+                id="cash"
+                name="payment"
+                value="Cash on Delivery"
+                required
+              />
+              <label for="cash">Cash on Delivery</label>
+              <br />
+
+              <input
+                type="radio"
+                id="bkash"
+                name="payment"
+                value="bKash/Nagad"
+              />
+              <label for="bkash">bKash/Nagad</label>
+              <br />
+
+              <input type="radio" id="card" name="payment" value="Card" />
+              <label for="card">Card</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="note">Special Note:</label></td>
+            <td>
+              <textarea
+                id="note"
+                name="note"
+                rows="3"
+                cols="35"
+                placeholder="Extra sauce, less spicy, etc."
+              ></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Price:</td>
+            <td><strong>1000Tk</strong> per item</td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td>
+              <input type="checkbox" id="confirm" name="confirm" required />
+              <label for="confirm">I confirm my order details are correct.</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td>
+              <button type="submit"><strong>Confirm Order</strong></button>
+              <button type="reset">Clear</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </main>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <hr />
+
+    <footer>
+      <table width="100%">
+        <tr>
+          <td align="center"><em>(c) 2026 Taste Haven</em></td>
+        </tr>
+      </table>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: greenyellow;
+}
+
+
+
+.right ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    list-style: none;
+    gap: 20px;
+}
+

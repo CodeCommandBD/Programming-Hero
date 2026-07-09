@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.common-btn{
+    color: #07172f;
+    background: #d7deff;
+    padding: 13px 30px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.common-btn:hover{
+    background: white;
+    transform: translateY(-1px);
+}
+
+/* nav bar */
+.page-shell{
+    display: flex;
+    min-height: 100vh;
+}
+.page-content{
+    flex: 1;
+    min-width: 0;
+    background: #101010;
+}
+aside{
+    width: 92px;
+    flex: 0 0 92px;
+    background: #0b0b0d;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 34px 0 30px;
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+.aside-top{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aside-top h1{
+    color: white;
+    font-size: 22px;
+    letter-spacing: 5px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+.aside-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    font-size: 20px;
+}
+.aside-bottom i{
+    color: white !important;
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.aside-bottom i:hover{
+    background: white;
+    color: #101010 !important;
+}
+.nav-root{
+    min-height: 86px;
+    background: rgba(16, 16, 16, 0.96);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+}
+.nav-area{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav-left ul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.nav-left ul li a{
+    text-decoration: none;
+    color: #b8b8b8;
+    display: inline-flex;
+    align-items: center;
+    min-height: 42px;
+    padding: 0 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: 0.2s ease;
+}
+.nav-left ul li a:hover,
+.nav-left ul li a.active{
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+}
+.hero-area{
+    min-height: calc(100vh - 86px);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.27)), url(./media/professional_cinematic_landscape_photography_dramatic_mountain_range_at_sunset.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.hero-content{
+    background: #2c2a2a3f;
+    padding: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0px 0px 15px #13dddd;
+    text-align: center;    
+}
+.hero-content h2{
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.hero-content p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+.feed-root{
+    margin: 80px 0;
+}
+.feed-content h2{
+    color: white;
+    margin-bottom: 30px;
+}
+
+.gallery{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    grid-template-areas: 
+        "one two three"
+        "one five six"
+        "seven five nine"
+        "seven four nine"
+        "seven eight nine"
+    ;
+}
+.gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box1{
+    grid-area: one;
+}
+.box2{
+    grid-area: two;
+}
+.box3{
+    grid-area: three;
+}
+.box4{
+    grid-area: four;
+}
+.box5{
+    grid-area: five;
+}
+.box6{
+    grid-area: six;
+}
+.box7{
+    grid-area: seven;
+}
+.box8{
+    grid-area: eight;
+}
+.box9{
+    grid-area: nine;
+}
+
+@media (max-width: 800px){
+    .page-shell{
+        display: block;
+    }
+
+    aside{
+        width: 100%;
+        height: auto;
+        min-height: 72px;
+        position: static;
+        flex-direction: row;
+        padding: 0 20px;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .aside-top{
+        width: auto;
+        flex: none;
+    }
+
+    .aside-top h1{
+        writing-mode: horizontal-tb;
+        transform: none;
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+
+    .aside-bottom{
+        flex-direction: row;
+    }
+
+    .nav-root{
+        position: static;
+        padding: 14px 0;
+    }
+
+    .nav-area{
+        flex-wrap: wrap;
+    }
+
+    .nav-left ul{
+        flex-wrap: wrap;
+    }
+
+    .nav-left ul li a{
+        min-height: 38px;
+        padding: 0 12px;
+    }
+
+    .hero-area{
+        min-height: 70vh;
+    }
+
+    .gallery{
+        grid-template-columns: 1fr;
+        grid-auto-rows: 240px;
+        grid-template-areas:
+            "one"
+            "two"
+            "three"
+            "four"
+            "five"
+            "six"
+            "seven"
+            "eight"
+            "nine";
+    }
+}

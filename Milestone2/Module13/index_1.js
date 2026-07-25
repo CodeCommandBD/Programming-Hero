@@ -19,3 +19,6 @@ function checkNum(num){
 }
 
 console.log(checkNum(10));
+console.log(checkNum(11));
+console.log(checkNum(15));
+console.log(checkNum(20));

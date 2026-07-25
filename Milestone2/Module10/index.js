@@ -330,3 +330,64 @@ position.push(joinposi)
 
 console.log(position);
 
+console.log("===========");
+console.log("===========")
+
+
+// ################################## OTHER #####################
+// ################################## OTHER #####################
+// ################################## OTHER #####################
+
+// Sum of First and Last Element:
+// Given an array of numbers, add the first item and the last item together and log the result.
+// Input: [10, 20, 30, 40]
+// Expected: 50
+
+
+const number1 = [10,20,30,40]
+
+let firstNumber = number1.shift()
+let secondNumber = number1.pop()
+
+let sumOfNumber = firstNumber + secondNumber
+
+console.log(sumOfNumber);
+
+console.log("===========");
+console.log("===========")
+
+// alternative 
+
+const number2 = [10,20,30,40]
+
+let firstNumber1 = number2[0]
+let secondNumber2 = number2.length - 1
+
+let sumOfNumber2 = firstNumber + secondNumber
+
+console.log(sumOfNumber2);
+
+
+console.log("===========");
+console.log("===========")
+
+// Check for Palindrome Array:Check if an array reads the same forward and backward. Log true or false.
+// Input 1: [1, 2, 3, 2, 1] $\rightarrow$ Expected: true 
+// Input 2: [1, 2, 3, 4, 5] $\rightarrow$ Expected: false
+
+
+const input1 = [1, 2, 3, 2, 1];
+let isPalindrome = true;
+
+for (let i = 0; i < input1.length / 2; i++) {
+  let startElement = input1[i];
+  let endElement = input1[input1.length - 1 - i];
+
+
+  if (startElement !== endElement) {
+    isPalindrome = false;
+    break; 
+  }
+}
+
+console.log(isPalindrome); // true

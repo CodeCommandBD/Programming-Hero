@@ -1,0 +1,61 @@
+[
+  {
+    "type": "executionPlan",
+    "planId": "plan-1785092683536-b677645f",
+    "generatedAt": "2026-07-26T19:04:43.572Z",
+    "root": "f:\\SHANTO_windows\\Programming Hero",
+    "task": {
+      "name": "Analyze the project at \"f:\\SHANTO_windows\\Programming Hero\" for code quality, unused imports, and potential optimizations. Provide a brief summary only."
+    },
+    "sourcePlan": {
+      "generatedAt": "2026-07-26T19:04:43.507Z",
+      "root": "f:\\SHANTO_windows\\Programming Hero",
+      "task": {
+        "name": "Analyze the project at \"f:\\SHANTO_windows\\Programming Hero\" for code quality, unused imports, and potential optimizations. Provide a brief summary only."
+      },
+      "architectureType": "debug",
+      "modules": [],
+      "components": [],
+      "dataFlow": [],
+      "fileChanges": [],
+      "dependencies": {
+        "packageManager": "npm",
+        "external": {}
+      },
+      "risks": [],
+      "confidence": 0.8,
+      "status": "ok",
+      "reason": null
+    },
+    "steps": [
+      {
+        "id": "run:tests",
+        "action": "run",
+        "affectedFiles": [],
+        "patch": {
+          "file": null,
+          "operations": []
+        },
+        "tool": "shell",
+        "command": "npm test",
+        "expectedResult": {
+          "type": "shell_exit",
+          "code": 0
+        },
+        "validation": {
+          "type": "shell_exit",
+          "code": 0
+        },
+        "rollback": {
+          "action": "noop"
+        }
+      }
+    ],
+    "executionOrder": [
+      "run:tests"
+    ],
+    "stepDependencies": [],
+    "dependencies": [],
+    "riskLevel": "low"
+  }
+]

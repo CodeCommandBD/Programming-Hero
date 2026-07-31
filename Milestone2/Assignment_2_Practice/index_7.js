@@ -20,22 +20,43 @@
 
 
 function generateReportCard(student){
-    if(typeof student !== "object" || Array.isArray(student) || student === null){
+    if(typeof student !== "object" || student === null){
         return "Invalid"
     }else if(typeof student.bangla !== 'number' || typeof student.english !== 'number' || typeof student.math !== 'number'){
-        return "Invlid"
+        return "Invalid"
     }
-    let sum = 0
+
+    let totlSum = 0;
+    let subjectCount = 0;
 
     for(let key in student){
-       
+        if(typeof student[key] === "number"){
+            totlSum += student[key]
+            subjectCount ++
+        }
     }
-    console.log(sum);
+
+    let avg = totlSum / subjectCount
+
+
+    let grade = ""
+
+    if(avg >= 90){
+        grade = "A+"
+    }else if(avg >= 80){
+        grade  = "A"
+    }else if(avg >= 70){
+        grade = "B"
+    }else{
+        grade = "F"
+    }
     
 
     return{
         name: student.name,
-        total: student,
+        total: totlSum,
+        average: avg,
+        grade: grade,
     }
 
     

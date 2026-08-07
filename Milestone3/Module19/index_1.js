@@ -12,9 +12,14 @@
 
 
 const finduserById = (users, id) => {
-    let findId = users.find((user)=>{       
-        return user.id === id
+
+    let findId = users.find((user)=>{   
+          
+        return user.id === id 
     })
+     if(!findId){
+        return "user not found"
+     }
     return findId
 }
 
@@ -24,4 +29,4 @@ const users = [
   { id: 2, name: "karim" },
 ];
 
-console.log(finduserById(users, 2));
+console.log(finduserById(users, 3));

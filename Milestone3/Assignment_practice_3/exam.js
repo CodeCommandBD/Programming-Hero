@@ -9,7 +9,7 @@
 
 
 const calculateTotal=(discount = 10, ...prices) => {
-    console.log(prices);
+    
 
     let Total = 0
 

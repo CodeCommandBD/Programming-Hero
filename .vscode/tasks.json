@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "ts-node: run current file",
+      "type": "shell",
+      "command": "npx",
+      "args": [
+        "ts-node",
+        "${file}"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/Milestone4/Module22"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}

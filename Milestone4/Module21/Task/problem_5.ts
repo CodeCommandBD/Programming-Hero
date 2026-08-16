@@ -5,4 +5,9 @@ const info = (data:{name: string, email?: string}):string  => {
 
 }
 
-console.log(info({name:'shnto'}));
+const userInfo = {
+    name: 'shanto',
+    email: 'shan@gmail.com'
+}
+
+console.log(info(userInfo));

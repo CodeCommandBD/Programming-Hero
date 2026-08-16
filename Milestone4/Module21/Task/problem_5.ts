@@ -1,5 +1,5 @@
 
-const info = (data:{name: string, email?: string})  => {
+const info = (data:{name: string, email?: string}):string  => {
     
     return `Name: ${data.name} Email: ${data.email || "Not provided"} `
 

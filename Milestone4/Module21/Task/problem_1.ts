@@ -1,5 +1,6 @@
-const printUser = (name:string, age: number) => {
-    return `${name} is ${age} years old`
+
+function userInfo(name:string, age:number): string {
+  return `${name} is ${age} years old`;
 }
 
-console.log(printUser('joya', 25));
+console.log(userInfo("Amina", 22));

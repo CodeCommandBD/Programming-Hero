@@ -1,6 +1,6 @@
+const productsName: string = "Laptop";
+const productsPrice: number = 1200;
+const isAvailable: boolean = true;
 
-const product = (name:string, price: number, isAvailable: boolean) => {
-    return `${name} cost ${price} and is available: ${isAvailable}`
-}
 
-console.log(product("laptop", 45000, true));
+console.log(`${productsName} cost ${productsPrice} and is available: ${isAvailable}`);

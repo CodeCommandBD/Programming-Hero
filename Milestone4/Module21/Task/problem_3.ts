@@ -1,7 +1,4 @@
-const studentInfo: string[] = ['rahim', 'korim','jola', 'kola']
-
-console.log(studentInfo.length);
+const studentList: string[] = ["Amina", "Shanto", "Rafi", "Sakib", "Nabila"];
 
 
-
-
+console.log("Total Student: ", studentList.length);

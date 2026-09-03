@@ -1,22 +1,32 @@
-import Cart from "./components/Cart"
+import { Suspense } from "react"
+import LeftSideBar from "./components/LeftSideBar";
+import Navbar from "./components/Navbar";
+import RightSideBar from "./components/RightSideBar";
 
-const App = () => {
-
-  const handle = () => {
-    alert('click  me')
-  }
-
-  const addtoCart = (id: number) =>{
-    alert(id)
-  }
-
-  return (
-    <div>
-      <button onClick={handle}>click</button>
-      <button onClick={()=> addtoCart(5)}>callback click</button>
-      <Cart></Cart>
-    </div>
-  )
+const TableData = async() => {
+  let res = await fetch('https://jsonplaceholder.typicode.com/users')
+  let data = await res.json()
+  return data
 }
 
-export default App
+const App = () => {
+  return (
+    <div>
+      <Navbar></Navbar>
+
+      <div className="grid grid-cols-12 gap-5 container mx-auto">
+        <div className="col-span-3">
+          <LeftSideBar></LeftSideBar>
+        </div>
+        <div className="col-span-9">
+          <Suspense fallback={<p>Loading....</p>}>
+            
+            <RightSideBar TableData={TableData()}></RightSideBar>
+        </Suspense>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default App;

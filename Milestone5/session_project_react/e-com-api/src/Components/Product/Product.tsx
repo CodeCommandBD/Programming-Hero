@@ -1,14 +1,26 @@
+import { useState } from "react";
 import type { ProductType } from "../../Type";
 import "./Product.css";
 
 export interface ProductProps {
   product: ProductType;
+  handleCartProduct: (product: ProductType)=>void
+  handleSingleProduct: (singlepro: ProductType)=> void
 }
 
-export default function Product({ product }: ProductProps) {
-  console.log(product);
+export default function Product({ product,handleCartProduct,handleSingleProduct }: ProductProps) {
+
+ 
+  
+  const [addtocart, setAddtocart] = useState<boolean>(false)
 
    const ratingPercent = (product.rating.rate / 5) * 100;
+
+   const handleAddtoCart = () =>{
+        setAddtocart(!addtocart)
+        handleCartProduct(product)
+        handleSingleProduct(product)
+   }
 
   return (
     <article className="pc-card">
@@ -38,6 +50,7 @@ export default function Product({ product }: ProductProps) {
             <span className="pc-rating-count">({product.rating.count})</span>
           </div>
         </div>
+        <button onClick={handleAddtoCart} className="border p-3 bg-green-800 text-white hover:cursor-pointer "> {addtocart ? "Added" : "Add to Cart "}</button>
       </div>
     </article>
   );
